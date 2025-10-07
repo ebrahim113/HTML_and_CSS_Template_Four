@@ -1,0 +1,59 @@
+/* Start box */
+.d-flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}
+/* End box */
+
+/* Start padding and margin */
+.mt-0 {
+	margin-top: 0;
+}
+
+.m-20 {
+	margin: 20px;
+}
+
+.p-10 {
+	padding: 10px;
+}
+
+.p-20 { 
+	padding: 20px;
+}
+/* End padding and margin */
+
+/* Start Colors */
+.bg-white {
+	background-color: #fff;
+}
+
+.c-black {
+	color: #000;
+}
+/* End Colors */
+
+/* Start position */
+.p-relative {
+	position: relative;
+}
+/* End position */
+
+/* Start font */
+.fs-14 {
+	font-size: 14px;
+}
+
+.txt-c {
+	text-align: center;
+}
+/* End font */
+
+/* Start border */
+.rad-6 {
+	border-radius: 6px;
+}
+/* End border */
