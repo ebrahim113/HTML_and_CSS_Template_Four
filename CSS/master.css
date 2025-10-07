@@ -128,7 +128,9 @@ ul {
 
 /* Start content */
 .content {
+	/*
 	overflow: hidden;
+	*/
 }
 
 .content .head .search::before {
@@ -217,5 +219,64 @@ ul {
 		gap: 10px;
 	}
 }
-
 /* End content */
+
+/* Start welcome widget */
+.page .content .wrapper .welcome {
+	/*
+	overflow: hidden;
+	*/
+}
+
+@media (max-width: 767px) {
+	.page .content .wrapper .welcome .intro {
+		padding-bottom: 30px;
+	}
+}
+
+.page .content .wrapper .welcome .intro img {
+	width: 200px;
+	margin-bottom: -10px;
+}
+
+.page .content .wrapper .welcome .avatar {
+	width: 64px;
+    height: 64px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 0 5px #ddd;
+	transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+	.page .content .wrapper .welcome .avatar {
+		margin-left: 20px;
+	}
+}
+
+.page .content .wrapper .welcome .body {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin-top: -12px;
+}
+
+.page .content .wrapper .welcome .body>div {
+	flex: 1;
+}
+
+@media (max-width: 767px) {
+	.page .content .wrapper .welcome .body>div:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+.page .content .wrapper .welcome .visit {
+	margin: 0 15px 15px auto;
+	transition: var(--main-duration);
+}
+
+.page .content .wrapper .welcome .visit:hover {
+	background-color: var(--blue-alt-color);
+}
+/* End welcome widget */

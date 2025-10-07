@@ -8,18 +8,20 @@
 }
 
 /* Start box */
-@media (max-width: 767px) {
-	.block-mobile {
-		display: block;
-	}	
-}
-
 .d-flex {
 	display: flex;
 }
 
+.space-between {
+	justify-content: space-between;
+}
+
 .align-center {
 	align-items: center;
+}
+
+.d-block {
+	display: block;
 }
 
 .d-grid {
@@ -29,21 +31,55 @@
 .gap-20 {
 	gap: 20px;
 }
+
+@media (max-width: 767px) {
+	.block-mobile {
+		display: block;
+	}	
+	
+	.hide-mobile {
+		display: none;
+	}
+}
 /* End box */
 
 /* Start width and height */
 .w-full {
 	width: 100%;
 }
+
+.w-fit {
+	width: fit-content;
+}
 /* End width and height */
 
 /* Start padding and margin */
-.mt-0 {
-	margin-top: 0;
+.m-0 {
+	margin: 0;
 }
 
 .m-20 {
 	margin: 20px;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.mt-5 {
+	margin-top: 5px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
 }
 
 .p-10 {
@@ -64,8 +100,24 @@
 	background-color: #fff;
 }
 
+.bg-blue {
+	background-color: var(--blue-color);
+}
+
+.bg-eee {
+	background-color: #eee;
+}
+
+.c-white {
+	color: #fff;
+}
+
 .c-black {
 	color: #000;
+}
+
+.c-grey {
+	color: var(--grey-color);
 }
 /* End Colors */
 
@@ -106,5 +158,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.btn-shape {
+	
 }
 /* End components */
