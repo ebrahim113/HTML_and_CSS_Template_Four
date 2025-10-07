@@ -12,6 +12,10 @@
 	display: flex;
 }
 
+.f-wrap {
+	flex-wrap: wrap;
+}
+
 .space-between {
 	justify-content: space-between;
 }
@@ -78,6 +82,10 @@
 	margin-top: 20px;
 }
 
+.mb-5 {
+	margin-bottom: 5px;
+}
+
 .mb-10 {
 	margin-bottom: 10px;
 }
@@ -128,6 +136,10 @@
 	color: #000;
 }
 
+.c-red {
+	color: var(--red-color);
+}
+
 .c-blue {
 	color: var(--blue-color);
 }
@@ -158,6 +170,10 @@
 
 .fs-15 {
 	font-size: 15px;
+}
+
+.fs-25 {
+	font-size: 25px;
 }
 
 .fw-bold {
