@@ -164,6 +164,10 @@
 /* End position */
 
 /* Start font */
+.fs-13 {
+	font-size: 13px;
+}
+
 .fs-14 {
 	font-size: 14px;
 }
