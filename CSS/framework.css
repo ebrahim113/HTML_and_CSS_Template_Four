@@ -78,6 +78,10 @@
 	margin-top: 20px;
 }
 
+.mb-10 {
+	margin-bottom: 10px;
+}
+
 .mb-20 {
 	margin-bottom: 20px;
 }
@@ -104,6 +108,14 @@
 	background-color: var(--blue-color);
 }
 
+.bg-orange {
+	background-color: var(--orange-color);
+}
+
+.bg-green {
+	background-color: var(--green-color);
+}
+
 .bg-eee {
 	background-color: #eee;
 }
@@ -114,6 +126,18 @@
 
 .c-black {
 	color: #000;
+}
+
+.c-blue {
+	color: var(--blue-color);
+}
+
+.c-orange {
+	color: var(--orange-color);
+}
+
+.c-green {
+	color: var(--green-color);
 }
 
 .c-grey {
@@ -132,6 +156,14 @@
 	font-size: 14px;
 }
 
+.fs-15 {
+	font-size: 15px;
+}
+
+.fw-bold {
+	font-weight: bold;
+}
+
 .txt-c {
 	text-align: center;
 }
@@ -144,6 +176,10 @@
 /* End font */
 
 /* Start border */
+.b-none {
+	border: none;
+}
+
 .rad-6 {
 	border-radius: 6px;
 }
@@ -160,7 +196,14 @@
 	align-items: center;
 }
 
+.center-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .btn-shape {
-	
+	padding: 4px 10px;
+	border-radius: 6px;
 }
 /* End components */

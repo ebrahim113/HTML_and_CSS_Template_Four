@@ -95,26 +95,88 @@
 						<img class="hide-mobile" src="images/welcome.png" alt="welcome">
 					</div>
 					<img class="avatar" src="images/avatar.png" alt="avatar">
-					<div class="body txt-c d-flex p-20 mt-20 block-mobile">
+					<div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
 						<div>
-							Osama Elzero 
+							Osama Elzero
 							<span class="d-block c-grey fs-14 mt-10">Developer</span>
 						</div>
 						<div>
-							80 
+							80
 							<span class="d-block c-grey fs-14 mt-10">Projects</span>
 						</div>
 						<div>
-							$8500 
+							$8500
 							<span class="d-block c-grey fs-14 mt-10">Earned</span>
 						</div>
 					</div>
 					<a class="visit d-block fs-14 bg-blue c-white w-fit btn-shape" href="profile.html">Profile</a>
 				</div>
 				<!-- End welcome widget -->
+				<!-- Start quick draft widget -->
+				<div class="quick-draft p-20 bg-white -rad-10">
+					<h2 class="mt-0 mb-10">Quick Draft</h2>
+					<p class="mt-0 mb-20 c-grey fs-15">Write a Draft for your ideas</p>
+					<form>
+						<input class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" type="text" placeholder="Title">
+						<textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+							placeholder="Your Thoughts"></textarea>
+						<input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" type="submit"
+							value="save">
+					</form>
+				</div>
+				<!-- End quick draft widget -->
+				<!-- Start targets widget -->
+				<div class="targets p-20 bg-white rad-10">
+					<h2 class="mt-0 mb-10">Yearly Targets</h2>
+					<p class="mt-0 mb-20 c-grey fs-15">Targets of the Year</p>
+					<div class="target-row blue mb-20 d-flex align-center">
+						<div class="icon center-flex">
+							<i class="fa-regular fa-dollar-sign c-blue"></i>
+						</div>
+						<div class="details">
+							<span class="fs-14 c-grey">Money</span>
+							<span class="d-block mt-5 mb-10 fw-bold">$20,000</span>
+							<div class="progress p-relative">
+								<span class="blue bg-blue" data-progress="80%">
+									<span class="bg-blue" data-goal="80">0</span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="target-row orange mb-20 d-flex align-center">
+						<div class="icon center-flex">
+							<i class="fa-solid fa-code fa-lg c-orange"></i>
+						</div>
+						<div class="details">
+							<span class="fs-14 c-grey">Projects</span>
+							<span class="d-block mt-5 mb-10 fw-bold">24</span>
+							<div class="progress p-relative">
+								<span class="orange bg-orange" data-progress="55%">
+									<span class="bg-orange" data-goal="55">0</span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="target-row green mb-20 d-flex align-center">
+						<div class="icon center-flex">
+							<i class="fa-solid fa-user fa-lg c-green"></i>
+						</div>
+						<div class="details">
+							<span class="fs-14 c-grey">Team</span>
+							<span class="d-block mt-5 mb-10 fw-bold">12</span>
+							<div class="progress p-relative">
+								<span class="green bg-green" data-progress="75%">
+									<span class="bg-green" data-goal="75">0</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End targets widget -->
 			</div>
 		</div>
 	</div>
+	<script src="main.js"></script>
 </body>
 
 </html>
