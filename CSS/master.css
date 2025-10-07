@@ -215,7 +215,7 @@ ul {
 @media (max-width: 767px) {
 	.page .content .wrapper {
 		grid-template-columns: minmax(200px, 1fr);
-		margin: 0 10px;
+		margin: 0 10px 10px;
 		gap: 10px;
 	}
 }
@@ -457,3 +457,14 @@ ul {
 	color: var(--red-color);
 }
 /* End tasks widget */
+
+/* Start latest uploads widget */
+.page .content .wrapper .latest-uploads ul li:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+
+.page .content .wrapper .latest-uploads ul li img {
+	width: 40px;
+	height: 40px;
+}
+/* End latest uploads widget */
