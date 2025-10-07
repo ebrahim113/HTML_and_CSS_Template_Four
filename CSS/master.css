@@ -1,5 +1,13 @@
 /* Start variables */
-:root {}
+:root {
+	--blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+	--main-duration: .3s;
+}
 /* End variables */
 
 /* Start global rules */
@@ -81,7 +89,7 @@ ul {
 }
 
 .sidebar ul li a {
-	transition: .3s;
+	transition: var(--main-duration);
 	margin-bottom: 5px;
 }
 
@@ -99,5 +107,60 @@ ul {
 		display: none;
 	}
 }
-
 /* End sidebar */
+
+/* Start content */
+.content {
+	overflow: hidden;
+}
+
+.content .head .search::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f002";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+	font-size: 14px;
+	color: var(--grey-color);
+}
+
+.content .head .search input {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin-left: 5px;
+	padding-left: 30px;
+	width: 160px;
+	transition: width var(--main-duration);
+}
+
+.content .head .search input:focus {
+	width: 200px;
+}
+
+.content .head .search input::placeholder {
+	transition: var(--main-duration);
+}
+
+.content .head .search input:focus::placeholder {
+	opacity: 0;
+}
+
+.content .head .icons .notification::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+}
+
+.content .head .icons img {
+	width: 32px;
+	height: 32px;
+	margin-left: 15px;
+}
+/* End content */
