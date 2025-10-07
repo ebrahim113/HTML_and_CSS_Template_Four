@@ -205,4 +205,17 @@ ul {
 	left: 0;
 }
 
+.page .content .wrapper {
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+	margin: 0 20px;
+}
+
+@media (max-width: 767px) {
+	.page .content .wrapper {
+		grid-template-columns: minmax(200px, 1fr);
+		margin: 0 10px;
+		gap: 10px;
+	}
+}
+
 /* End content */
