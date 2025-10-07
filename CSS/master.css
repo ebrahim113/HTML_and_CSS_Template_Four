@@ -427,3 +427,33 @@ ul {
 	}
 }
 /* End latest news widget */
+
+/* Start tasks widget */
+.page .content .wrapper .tasks .task-row:not(:last-child) {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.page .content .wrapper .tasks .task-row .info {
+	flex: 1;
+}
+
+.page .content .wrapper .tasks .task-row.done {
+	opacity: .3;
+}
+
+.page .content .wrapper .tasks .task-row.done h3,
+.page .content .wrapper .tasks .task-row.done p {
+	text-decoration: line-through;
+}
+
+.page .content .wrapper .tasks .task-row:not(.done) .delete {
+	cursor: pointer;
+	transition: var(--main-duration);
+}
+
+.page .content .wrapper .tasks .task-row:not(.done) .delete:hover {
+	color: var(--red-color);
+}
+/* End tasks widget */
