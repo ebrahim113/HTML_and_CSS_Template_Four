@@ -650,6 +650,7 @@ ul {
 /* End dashboard */
 
 /* Start settings */
+/* Start site control widget */
 .page .content .settings-page {
 	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
@@ -671,6 +672,7 @@ ul {
 
 .page .content .settings-page label .toggle-checkbox {
 	appearance: none;
+	display: none;
 }
 
 .page .content .settings-page label .toggle-switch::before {
@@ -711,6 +713,18 @@ ul {
 .page .content .settings-page label .toggle-checkbox:checked+.toggle-switch {
 	background-color: var(--blue-color);
 }
+/* End site control widget */
+
+/* Start genreal info widget */
+.page .content .settings-page .email {
+	display: inline-flex;
+	width: calc(100% - 80px);
+}
+
+.page .content .settings-page a {
+	cursor: pointer;
+}
+/* End genreal info widget */
 /* End settings */
 
 /* Start animations */
