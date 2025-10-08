@@ -650,6 +650,25 @@ ul {
 /* End dashboard */
 
 /* Start settings */
+.page .content .settings-page {
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+	.page .content .settings-page {
+		grid-template-columns: minmax(100px, 1fr);
+		margin-right: 10px;
+		margin-left: 10px;
+		gap: 10px;
+	}
+}
+
+.page .content .settings-page .close-message {
+	border: 1px solid #ccc;
+	resize: none;
+	min-height: 150px;
+}
+
 .page .content .settings-page label .toggle-checkbox {
 	appearance: none;
 }
