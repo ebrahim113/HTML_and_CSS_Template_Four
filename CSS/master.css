@@ -817,6 +817,77 @@ ul {
 }
 /* End widgets control widget */
 
+/* Start backup manager widget */
+.page .content .settings-page .backup-control input {
+	appearance: none;
+}
+
+.page .content .settings-page .backup-control .date label::before {
+    top: 50%;
+    left: 0;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+}
+
+.page .content .settings-page .backup-control .date input:checked+label::before {
+	border-color: var(--blue-color);
+}
+
+.page .content .settings-page .backup-control .date label {
+	padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.page .content .settings-page .backup-control .date label::after {
+    top: 5px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--blue-color);
+    transition: var(--main-duration);
+    transform: scale(0);
+}
+
+.page .content .settings-page .backup-control .date input:checked+label::after {
+	transform: scale(1);
+}
+
+.page .content .settings-page .backup-control .date label::before,
+.page .content .settings-page .backup-control .date label::after {
+	content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.page .content .settings-page .backup-control .servers {
+	border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+	.page .content .settings-page .backup-control .servers {
+		flex-wrap: wrap;
+	}
+}
+
+.page .content .settings-page .backup-control .servers .server {
+	border: 2px solid #eee;
+    position: relative;
+}
+
+.page .content .settings-page .backup-control .servers .server label {
+	cursor: pointer;
+}
+
+.page .content .settings-page .backup-control .servers input:checked+.server {
+	color: var(--blue-color);
+	border-color: var(--blue-color);
+}
+/* End backup manager widget */
+
 .page .content .settings-page :disabled {
 	cursor: no-drop;
 	background-color: #f0f4f8;
