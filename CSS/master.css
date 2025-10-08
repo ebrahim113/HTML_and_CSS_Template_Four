@@ -721,10 +721,55 @@ ul {
 	width: calc(100% - 80px);
 }
 
-.page .content .settings-page a {
+.page .content .settings-page .change {
 	cursor: pointer;
 }
 /* End genreal info widget */
+
+/* Start security info widget */
+.page .content .settings-page .sec-box:not(:last-child) {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.page .content .settings-page .sec-box .button {
+	transition: var(--main-duration);
+}
+
+.page .content .settings-page .sec-box .button:hover {
+	background-color: var(--blue-alt-color);
+}
+/* End security info widget */
+
+/* Start social info widget */
+.page .content .settings-page .social-boxes i {
+	width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: var(--main-duration);
+}
+
+.page .content .settings-page .social-boxes>div:focus-within i {
+	color: #000;
+}
+
+.page .content .settings-page .social-boxes input {
+	height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+}
+/* End social info widget */
+
+.page .content .settings-page :disabled {
+	cursor: no-drop;
+	background-color: #f0f4f8;
+	color: #bbb;
+}
 /* End settings */
 
 /* Start animations */
