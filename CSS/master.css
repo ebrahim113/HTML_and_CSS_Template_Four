@@ -537,9 +537,62 @@ ul {
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 	min-height: 140px;
-	
 }
 /* End latest post widget */
+
+/* Start social media stats widget */
+.page .content .wrapper .social-media .box {
+	padding-left: 70px;
+}
+
+.page .content .wrapper .social-media .box i {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 52px;
+	transition: .3s
+}
+
+.page .content .wrapper .social-media .box i:hover {
+	transform: rotate(5deg);
+}
+
+.page .content .wrapper .social-media .box.twitter {
+	background-color: rgb(29 161 242 / 20%);
+	color: #1da1f2;
+}
+
+.page .content .wrapper .social-media .box.facebook {
+	background-color: rgb(24 119 242 / 20%);
+    color: #1877f2;
+}
+
+.page .content .wrapper .social-media .box.youtube {
+    background-color: rgb(255 0 0 / 20%);
+    color: #f00;
+}
+
+.page .content .wrapper .social-media .box.linkedin {
+    background-color: rgb(10 102 194 / 20%);
+    color: #0a66c2;
+}
+
+.page .content .wrapper .social-media .box.twitter i, .page .content .wrapper .social-media .box.twitter a {
+	background-color: #1da1f2;
+}
+
+.page .content .wrapper .social-media .box.facebook i, .page .content .wrapper .social-media .box.facebook a {
+	background-color: #1877f2;
+}
+
+.page .content .wrapper .social-media .box.youtube i, .page .content .wrapper .social-media .box.youtube a {
+	background-color: #f00;
+}
+
+.page .content .wrapper .social-media .box.linkedin i, .page .content .wrapper .social-media .box.linkedin a {
+	background-color: #0a66c2;
+}
+/* End social media stats widget */
 
 /* Start animations */
 @keyframes change-color {
