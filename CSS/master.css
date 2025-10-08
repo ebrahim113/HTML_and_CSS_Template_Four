@@ -127,12 +127,6 @@ ul {
 /* End sidebar */
 
 /* Start content */
-.page .content {
-	/*
-	overflow: hidden;
-	*/
-}
-
 .page .content .head .search::before {
     font-family: var(--fa-style-family-classic);
     content: "\f002";
@@ -507,6 +501,29 @@ ul {
 	opacity: .1;
 }
 /* End Last project progress widget */
+
+/* Start reminders widget */
+.page .content .wrapper .reminders ul li .key {
+	width: 15px;
+	height: 15px;
+}
+
+.page .content .wrapper .reminders ul li>.blue {
+	border-left: 2px solid var(--blue-color);
+}
+
+.page .content .wrapper .reminders ul li>.green {
+	border-left: 2px solid var(--green-color);
+}
+
+.page .content .wrapper .reminders ul li>.orange {
+	border-left: 2px solid var(--orange-color);
+}
+
+.page .content .wrapper .reminders ul li>.red {
+	border-left: 2px solid var(--red-color);
+}
+/* End reminders widget */
 
 /* Start animations */
 @keyframes change-color {

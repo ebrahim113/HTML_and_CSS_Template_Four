@@ -74,6 +74,10 @@
 	margin-top: 5px;
 }
 
+.mt-15 {
+	margin-top: 15px;
+}
+
 .mt-10 {
 	margin-top: 10px;
 }
@@ -88,6 +92,10 @@
 
 .mr-10 {
 	margin-right: 10px;
+}
+
+.mr-15 {
+	margin-right: 15px;
 }
 
 .mb-5 {
@@ -125,11 +133,23 @@
 .pb-15 {
 	padding-bottom: 15px;
 }
+
+.pl-15 {
+	padding-left: 15px;
+}
 /* End padding and margin */
 
 /* Start Colors */
 .bg-white {
 	background-color: #fff;
+}
+
+.bg-red {
+	background-color: var(--red-color);
+}
+
+.bg-green {
+	background-color: var(--green-color);
 }
 
 .bg-blue {
@@ -138,10 +158,6 @@
 
 .bg-orange {
 	background-color: var(--orange-color);
-}
-
-.bg-green {
-	background-color: var(--green-color);
 }
 
 .bg-eee {
@@ -226,6 +242,10 @@
 
 .rad-10 {
 	border-radius: 10px;
+}
+
+.rad-half {
+	border-radius: 50%;
 }
 /* End border */
 
