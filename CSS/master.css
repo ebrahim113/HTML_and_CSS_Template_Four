@@ -765,6 +765,58 @@ ul {
 }
 /* End social info widget */
 
+/* Start widgets control widget */
+.page .content .settings-page .widgets-control .control label::before {
+    content: "";
+	width: 14px;
+	height: 14px;
+	border: 2px solid var(--grey-color);
+}
+
+.page .content .settings-page .widgets-control .control label:hover::before {
+	border-color: var(--blue-alt-color);
+}
+
+.page .content .settings-page .widgets-control .control label {
+	padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.page .content .settings-page .widgets-control .control label::after {
+	font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    background-color: var(--blue-color);
+    color: #fff;
+	font-size: 12px;
+	width: 18px;
+	height: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0) rotate(360deg);
+	transition: var(--main-duration);
+}
+
+.page .content .settings-page .widgets-control .control label::before,
+.page .content .settings-page .widgets-control .control label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+	margin-top: -9px;
+	border-radius: 4px;
+}
+
+.page .content .settings-page .widgets-control .control input {
+	appearance: none;
+}
+
+.page .content .settings-page .widgets-control .control input:checked+label::after {
+	transform: scale(1);
+}
+/* End widgets control widget */
+
 .page .content .settings-page :disabled {
 	cursor: no-drop;
 	background-color: #f0f4f8;
