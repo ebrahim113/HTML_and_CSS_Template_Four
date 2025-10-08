@@ -127,6 +127,10 @@ ul {
 /* End sidebar */
 
 /* Start content */
+.page .content {
+	overflow: hidden;
+}
+
 .page .content .head .search::before {
     font-family: var(--fa-style-family-classic);
     content: "\f002";
@@ -593,6 +597,56 @@ ul {
 	background-color: #0a66c2;
 }
 /* End social media stats widget */
+
+/* Start projects table */
+.page .content .projects .responsive-table {
+	overflow-x: auto;
+}
+
+.page .content .projects .responsive-table table {
+	min-width: 1000px;
+	border-spacing: 0;
+}
+
+.page .content .projects .responsive-table table thead tr th {
+	background-color: #eee;
+}
+
+.page .content .projects .responsive-table table tbody tr td {
+	border-bottom: 1px solid #eee;
+	border-left: 1px solid #eee;
+	transition: var(--main-duration);
+}
+
+.page .content .projects .responsive-table table tbody tr td:last-child {
+	border-right: 1px solid #eee;
+}
+
+.page .content .projects .responsive-table table tbody tr:hover td {
+	background-color: #faf7f7;
+}
+
+.page .content .projects .responsive-table table thead tr th,
+.page .content .projects .responsive-table table tbody tr td {
+	padding: 15px;
+}
+
+.page .content .projects .responsive-table table tbody tr td img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	padding: 2px;
+	background-color: #fff;
+}
+
+.page .content .projects .responsive-table table tbody tr td img:not(:first-child) {
+	margin-left: -20px;
+}
+
+.page .content .projects .responsive-table table tbody tr td .label {
+	font-size: 13px;
+}
+/* End projects table */
 
 /* Start animations */
 @keyframes change-color {
