@@ -468,3 +468,53 @@ ul {
 	height: 40px;
 }
 /* End latest uploads widget */
+
+/* Start Last project progress widget */
+.page .content .wrapper .last-project ul::before {
+	content: "";
+    position: absolute;
+    left: 11px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+
+.page .content .wrapper .last-project ul li::before {
+	content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #fff;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+	z-index: 1;
+}
+
+.page .content .wrapper .last-project ul li.done::before {
+	background-color: var(--blue-color);
+}
+
+.page .content .wrapper .last-project ul li.current::before {
+	animation: change-color .8s infinite alternate;
+}
+
+.page .content .wrapper .last-project .launch-icon {
+	position: absolute;
+	width: 160px;
+	right: 0;
+	bottom: 0;
+	opacity: .1;
+}
+/* End Last project progress widget */
+
+/* Start animations */
+@keyframes change-color {
+	from {
+		background-color: var(--blue-color);
+	}
+	to {
+		background-color: #fff;
+	}
+}
+/* End animations */
