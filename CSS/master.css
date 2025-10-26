@@ -1173,6 +1173,55 @@ ul {
 	transition: var(--main-duration);
 }
 /* End projects */
+/* Start courses */
+.page .content .courses-page {
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+	.page .content .courses-page {
+		grid-template-columns: minmax(200px, 1fr);
+		margin: 0 10px;
+		gap: 10px;
+	}
+}
+
+.page .content .courses-page .course {
+	overflow: hidden;
+}
+
+.page .content .courses-page .course .cover {
+	max-width: 100%;
+}
+
+.page .content .courses-page .course .instructor {
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	top: 20px;
+	left: 20px;
+	border: 2px solid #fff;
+}
+
+.page .content .courses-page .course div .description {
+	line-height: 1.6;
+}
+
+.page .content .courses-page .course .info {
+	border-top: 1px solid #eee;
+    font-size: 13px;
+}
+
+.page .content .courses-page .course .info .title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, calc(-50% - .5px));
+    font-size: 13px;
+}
+
+/* End courses */
 
 /* Start animations */
 @keyframes change-color {
