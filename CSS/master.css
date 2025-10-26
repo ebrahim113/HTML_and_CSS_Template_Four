@@ -1045,8 +1045,134 @@ ul {
 		margin-top: 15px;
 	}
 }
-
 /* End profile */
+
+/* Start projects */
+.page .content .projects-page {
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+	.page .content .projects-page {
+		grid-template-columns: minmax(200px, 1fr);
+		margin: 0 10px;
+		gap: 10px;
+	}
+}
+
+.page .content .projects-page .project .date {
+	position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.page .content .projects-page .project h4 {
+	font-weight: normal;
+}
+
+.page .content .projects-page .project .team {
+	position: relative;
+    min-height: 80px;
+}
+
+.page .content .projects-page .project .team a {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.page .content .projects-page .project .team a:nth-child(2) {
+	left: 25px;
+}
+
+.page .content .projects-page .project .team a:nth-child(3) {
+	left: 50px;
+}
+
+.page .content .projects-page .project .team a:nth-child(4) {
+	left: 75px;
+}
+
+.page .content .projects-page .project .team a:nth-child(5) {
+	left: 100px;
+}
+
+.page .content .projects-page .project .team a:hover {
+	z-index: 1;
+}
+
+.page .content .projects-page .project .team a img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+
+.page .content .projects-page .project .do {
+	justify-content: flex-end;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+@media (max-width: 767px) { 
+	.page .content .projects-page .project .do {
+		flex-direction: column;
+	}
+}
+
+.page .content .projects-page .project .do span {
+	padding: 3px 8px;
+    width: fit-content;
+}
+
+@media (max-width: 767px) {
+	.page .content .projects-page .project .do span:not(:last-child) {
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.page .content .projects-page .project .do span {
+		margin-left: 5px;
+	}
+}
+
+.page .content .projects-page .project .info {
+	border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+@media (max-width: 767px) {
+	.page .content .projects-page .project .info {
+		flex-direction: column;
+	}
+}
+
+.page .content .projects-page .project .info .prog {
+	height: 8px;
+	width: 260px;
+	position: relative;
+	border-radius: 6px;
+}
+
+@media (max-width: 767px) {
+	.page .content .projects-page .project .info .prog {
+		margin-bottom: 15px;
+	}
+}
+
+.page .content .projects-page .project .info .prog span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 0;
+	border-radius: 6px;
+	transition: var(--main-duration);
+}
+/* End projects */
 
 /* Start animations */
 @keyframes change-color {
