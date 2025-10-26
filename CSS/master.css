@@ -960,6 +960,10 @@ ul {
     font-size: 8px;
 }
 
+.page .content .profile-page .overview .info-box .box>div .toggle-checkbox:checked + .toggle-switch::before {
+	left: 62px;
+}
+
 .page .content .profile-page .overview .info-box .box>div label .toggle-switch {
 	height: 20px;
 }
@@ -970,9 +974,77 @@ ul {
 	}
 }
 
-.page .content .profile-page .overview .info-box .box>div .toggle-checkbox:checked + .toggle-switch::before {
-	left: 62px;
-}	
+@media (max-width: 767px) {
+	.page .content .profile-page .other-data {
+		flex-direction: column;
+	}	
+}
+
+.page .content .profile-page .other-data .skills-card ul li {
+	padding: 15px 0;
+}
+
+.page .content .profile-page .other-data .skills-card ul li:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+
+.page .content .profile-page .other-data .skills-card ul li span {
+	display: inline-flex;
+    padding: 4px 10px;
+    background-color: #eee;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.page .content .profile-page .other-data .skills-card ul li span:not(:last-child) {
+	margin-right: 5px;
+}
+
+.page .content .profile-page .other-data .activities {
+	flex-grow: 1;
+}
+
+.page .content .profile-page .other-data .activities .activity:not(:last-of-type) {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+	.page .content .profile-page .other-data .activities .activity {
+		flex-direction: column;
+	}
+}
+
+.page .content .profile-page .other-data .activities .activity img {
+	width: 64px;
+	height: 64px;
+}
+
+@media (min-width: 768px) {
+	.page .content .profile-page .other-data .activities .activity img {
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.page .content .profile-page .other-data .activities .activity img {
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.page .content .profile-page .other-data .activities .activity .date {
+		margin-left: auto;
+		text-align: right;
+	}
+}
+
+@media (max-width: 767px) {
+	.page .content .profile-page .other-data .activities .activity .date {
+		margin-top: 15px;
+	}
+}
 
 /* End profile */
 
