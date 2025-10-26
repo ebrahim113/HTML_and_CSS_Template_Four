@@ -1278,6 +1278,22 @@ ul {
 /* End friends */
 
 /* Start files */
+.page .content .files-page {
+	flex-direction: row-reverse;
+}
+
+@media (max-width: 767px) {
+	.page .content .files-page {
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 768px) {
+	.page .content .files-page {
+		align-items: flex-start;
+	}
+}
+
 .page .content .files-page .files-stats {
 	min-width: 260px;
 }
@@ -1320,6 +1336,25 @@ ul {
 
 .page .content .files-page .files-stats .upload:hover i {
 	animation: go-up .8s infinite;
+}
+
+.page .content .files-page .files-content {
+	flex: 1;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.page .content .files-page .files-content .file .icon img {
+	width: 64px;
+	height: 64px;
+	transition: var(--main-duration);
+}
+
+.page .content .files-page .files-content .file:hover .icon img {
+	transform: rotate(5deg);
+}
+
+.page .content .files-page .files-content .file .info {
+	border-top: 1px solid #eee;
 }
 /* End files */
 
