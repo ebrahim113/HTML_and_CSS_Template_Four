@@ -272,6 +272,10 @@
 	border: 1px solid #ccc;
 }
 
+.b-eee {
+	border: 1px solid #eee;
+}
+
 .rad-6 {
 	border-radius: 6px;
 }
