@@ -1357,6 +1357,78 @@ ul {
 	border-top: 1px solid #eee;
 }
 /* End files */
+.page .content .plans-page {
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+@media (max-width: 767px) {
+	.page .content .plans-page {
+		grid-template-columns: minmax(250px, 1fr);
+		margin: 0 10px;
+		gap: 10px;
+	}
+}
+
+.page .content .plans-page .plan .top {
+	border: 3px solid #eee;
+    outline: 3px solid transparent;
+}
+
+.page .content .plans-page .plan.green .top {
+	outline-color: var(--green-color);
+}
+
+.page .content .plans-page .plan.blue .top {
+	outline-color: var(--blue-color);
+}
+
+.page .content .plans-page .plan.orange .top {
+	outline-color: var(--orange-color);
+}
+
+.page .content .plans-page .plan .top .price {
+	position: relative;
+    font-size: 40px;
+    width: fit-content;
+    margin: auto;
+}
+
+.page .content .plans-page .plan .top .price span {
+	position: absolute;
+    left: -20px;
+    top: 0;
+    font-size: 25px;
+}
+
+.page .content .plans-page .plan ul li {
+	padding: 15px 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 1px solid #eee
+}
+
+.page .content .plans-page .plan ul li i:first-child {
+	font-size: 18px;
+	margin-right: 5px;
+}
+
+.page .content .plans-page .plan ul li i.yes {
+	color: var(--green-color);
+}
+
+.page .content .plans-page .plan ul li i:not(.yes, .help) {
+	color: var(--red-color);
+}
+
+.page .content .plans-page .plan ul li i.help {
+	color: var(--grey-color);
+	margin-left: auto;
+	cursor: pointer;
+}
+/* Start plans */
+
+/* End plans */
 
 /* Start animations */
 @keyframes change-color {
