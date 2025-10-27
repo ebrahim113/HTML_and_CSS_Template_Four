@@ -17,7 +17,6 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
-	margin: 0;
 }
 
 :focus {
@@ -107,7 +106,6 @@ ul {
 
 .page .sidebar ul li a {
 	transition: var(--main-duration);
-	margin-bottom: 5px;
 }
 
 .page .sidebar ul li a:hover,
@@ -117,12 +115,6 @@ ul {
 
 .page .sidebar ul li a span {
 	margin-left: 10px;
-}
-
-@media (max-width: 767px) {
-	.page .sidebar ul li a span {
-		display: none;
-	}
 }
 /* End sidebar */
 
@@ -166,7 +158,6 @@ ul {
     width: 78px;
     height: 32px;
     border-radius: 16px;
-    position: relative;
     transition: var(--main-duration);
     cursor: pointer;
 }
@@ -188,8 +179,6 @@ ul {
 }
 
 .page .content .head .search input {
-	border: 1px solid #ccc;
-	border-radius: 10px;
 	margin-left: 5px;
 	padding-left: 30px;
 	width: 160px;
@@ -258,7 +247,6 @@ ul {
 	.page .content .wrapper {
 		grid-template-columns: minmax(200px, 1fr);
 		margin: 0 10px 10px;
-		gap: 10px;
 	}
 }
 /* End content */
@@ -285,7 +273,6 @@ ul {
 	width: 64px;
     height: 64px;
     border: 2px solid #fff;
-    border-radius: 50%;
     padding: 2px;
     box-shadow: 0 0 5px #ddd;
 	margin-top: -32px;
@@ -297,12 +284,7 @@ ul {
 	}
 }
 
-.page .content .wrapper .welcome .body {
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-}
-
-.page .content .wrapper .welcome .body>div {
+.page .content .wrapper .welcome .body div {
 	flex: 1;
 }
 
@@ -355,26 +337,19 @@ ul {
 }
 
 .page .content .wrapper .targets .target-row .details .progress>span {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 0;
-	height: 100%;
 	transition: var(--main-duration);
 }
 
 .page .content .wrapper .targets .target-row .details .progress>span span {
-	font-size: 13px;
-	color: #fff;
-	position: absolute;
 	right: 0;
 	top: 0;
 	transform: translate(50%, calc(-100% - 10px));
 	width: 35.63px;
 	height: 22px;
 	padding: 2px 5px;
-	border-radius: 6px;
-	text-align: center;
 }
 
 .page .content .wrapper .targets .target-row .details .progress>span::after {
@@ -419,7 +394,6 @@ ul {
 /* Start tickets widget */
 .page .content .wrapper .tickets .box {
 	width: calc(50% - 10px);
-	border: 1px solid #ccc;
 }
 
 @media (max-width: 767px) {
@@ -430,23 +404,6 @@ ul {
 /* End tickets widget */
 
 /* Start latest news widget */
-.page .content .wrapper .latest-news .news-row:not(:last-of-type) {
-	margin-bottom: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #eee;
-}
-
-@media (max-width: 767px) {
-	.page .content .wrapper .latest-news .news-row {
-		display: block;
-	}
-}
-
-.page .content .wrapper .latest-news .news-row img {
-	width: 100px;
-	border-radius: 6px;
-}
-
 @media (min-width: 768px) {
 	.page .content .wrapper .latest-news .news-row img {
 		margin-right: 15px;
@@ -471,23 +428,18 @@ ul {
 /* End latest news widget */
 
 /* Start tasks widget */
-.page .content .wrapper .tasks .task-row:not(:last-child) {
-	padding-bottom: 15px;
-	margin-bottom: 15px;
-	border-bottom: 1px solid #eee;
-}
-
 .page .content .wrapper .tasks .task-row .info {
 	flex: 1;
 }
 
-.page .content .wrapper .tasks .task-row.done {
-	opacity: .3;
-}
-
 .page .content .wrapper .tasks .task-row.done h3,
 .page .content .wrapper .tasks .task-row.done p {
+	opacity: .3;
 	text-decoration: line-through;
+}
+
+.page .content .wrapper .tasks .task-row.done .delete {
+	opacity: .3;
 }
 
 .page .content .wrapper .tasks .task-row:not(.done) .delete {
@@ -501,10 +453,6 @@ ul {
 /* End tasks widget */
 
 /* Start latest uploads widget */
-.page .content .wrapper .latest-uploads ul li:not(:last-child) {
-	border-bottom: 1px solid #eee;
-}
-
 .page .content .wrapper .latest-uploads ul li img {
 	width: 40px;
 	height: 40px;
@@ -542,7 +490,6 @@ ul {
 }
 
 .page .content .wrapper .last-project .launch-icon {
-	position: absolute;
 	width: 160px;
 	right: 0;
 	bottom: 0;
@@ -582,8 +529,6 @@ ul {
 .page .content .wrapper .latest-post .post-content {
 	text-transform: capitalize;
 	line-height: 1.8;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
 	min-height: 140px;
 }
 /* End latest post widget */
@@ -594,7 +539,6 @@ ul {
 }
 
 .page .content .wrapper .social-media .box i {
-	position: absolute;
 	left: 0;
 	top: 0;
 	width: 52px;
@@ -652,12 +596,7 @@ ul {
 	border-spacing: 0;
 }
 
-.page .content .projects .responsive-table table thead tr th {
-	background-color: #eee;
-}
-
 .page .content .projects .responsive-table table tbody tr td {
-	border-bottom: 1px solid #eee;
 	border-left: 1px solid #eee;
 	transition: var(--main-duration);
 }
@@ -670,25 +609,14 @@ ul {
 	background-color: #faf7f7;
 }
 
-.page .content .projects .responsive-table table thead tr th,
-.page .content .projects .responsive-table table tbody tr td {
-	padding: 15px;
-}
-
 .page .content .projects .responsive-table table tbody tr td img {
 	width: 32px;
 	height: 32px;
-	border-radius: 50%;
 	padding: 2px;
-	background-color: #fff;
 }
 
 .page .content .projects .responsive-table table tbody tr td img:not(:first-child) {
 	margin-left: -20px;
-}
-
-.page .content .projects .responsive-table table tbody tr td .label {
-	font-size: 13px;
 }
 /* End projects table */
 /* End dashboard */
@@ -704,12 +632,10 @@ ul {
 		grid-template-columns: minmax(100px, 1fr);
 		margin-right: 10px;
 		margin-left: 10px;
-		gap: 10px;
 	}
 }
 
 .page .content .settings-page .close-message {
-	border: 1px solid #ccc;
 	resize: none;
 	min-height: 150px;
 }
@@ -727,11 +653,6 @@ ul {
 /* End genreal info widget */
 
 /* Start security info widget */
-.page .content .settings-page .sec-box:not(:last-child) {
-	padding-bottom: 15px;
-	border-bottom: 1px solid #eee;
-}
-
 .page .content .settings-page .sec-box .button {
 	transition: var(--main-duration);
 }
@@ -780,7 +701,6 @@ ul {
 .page .content .settings-page .widgets-control .control label {
 	padding-left: 30px;
     cursor: pointer;
-    position: relative;
 }
 
 .page .content .settings-page .widgets-control .control label::after {
@@ -838,7 +758,6 @@ ul {
 .page .content .settings-page .backup-control .date label {
 	padding-left: 30px;
     cursor: pointer;
-    position: relative;
 }
 
 .page .content .settings-page .backup-control .date label::after {
@@ -862,11 +781,6 @@ ul {
     border-radius: 50%;
 }
 
-.page .content .settings-page .backup-control .servers {
-	border-top: 1px solid #eee;
-    padding-top: 20px;
-}
-
 @media (max-width: 767px) {
 	.page .content .settings-page .backup-control .servers {
 		flex-wrap: wrap;
@@ -875,7 +789,6 @@ ul {
 
 .page .content .settings-page .backup-control .servers .server {
 	border: 2px solid #eee;
-    position: relative;
 }
 
 .page .content .settings-page .backup-control .servers .server label {
@@ -925,19 +838,14 @@ ul {
 }
 
 .page .content .profile-page .overview .avatar-box .level span {
-	position: absolute;
     left: 0;
     top: 0;
 	width: 0;
-    height: 100%;
     background-color: var(--blue-color);
 	transition: var(--main-duration);
-	border-radius: 6px;
 }
 
 .page .content .profile-page .overview .info-box .box {
-	flex-wrap: wrap;
-    border-bottom: 1px solid #eee;
     transition: var(--main-duration);
 }
 
@@ -984,16 +892,8 @@ ul {
 	padding: 15px 0;
 }
 
-.page .content .profile-page .other-data .skills-card ul li:not(:last-child) {
-	border-bottom: 1px solid #eee;
-}
-
 .page .content .profile-page .other-data .skills-card ul li span {
 	display: inline-flex;
-    padding: 4px 10px;
-    background-color: #eee;
-    border-radius: 6px;
-    font-size: 14px;
 }
 
 .page .content .profile-page .other-data .skills-card ul li span:not(:last-child) {
@@ -1005,9 +905,7 @@ ul {
 }
 
 .page .content .profile-page .other-data .activities .activity:not(:last-of-type) {
-	border-bottom: 1px solid #eee;
 	padding-bottom: 20px;
-	margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1024,12 +922,6 @@ ul {
 @media (min-width: 768px) {
 	.page .content .profile-page .other-data .activities .activity img {
 		margin-right: 10px;
-	}
-}
-
-@media (max-width: 767px) {
-	.page .content .profile-page .other-data .activities .activity img {
-		margin-bottom: 15px;
 	}
 }
 
@@ -1056,12 +948,10 @@ ul {
 	.page .content .projects-page {
 		grid-template-columns: minmax(200px, 1fr);
 		margin: 0 10px;
-		gap: 10px;
 	}
 }
 
 .page .content .projects-page .project .date {
-	position: absolute;
     right: 10px;
     top: 10px;
 }
@@ -1071,12 +961,10 @@ ul {
 }
 
 .page .content .projects-page .project .team {
-	position: relative;
     min-height: 80px;
 }
 
 .page .content .projects-page .project .team a {
-	position: absolute;
     left: 0;
     bottom: 0;
 }
@@ -1104,15 +992,11 @@ ul {
 .page .content .projects-page .project .team a img {
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;
 	border: 2px solid #fff;
 }
 
 .page .content .projects-page .project .do {
 	justify-content: flex-end;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-    margin-top: 15px;
 }
 
 @media (max-width: 767px) { 
@@ -1123,25 +1007,12 @@ ul {
 
 .page .content .projects-page .project .do span {
 	padding: 3px 8px;
-    width: fit-content;
-}
-
-@media (max-width: 767px) {
-	.page .content .projects-page .project .do span:not(:last-child) {
-		margin-bottom: 15px;
-	}
 }
 
 @media (min-width: 768px) {
 	.page .content .projects-page .project .do span {
 		margin-left: 5px;
 	}
-}
-
-.page .content .projects-page .project .info {
-	border-top: 1px solid #eee;
-    margin-top: 15px;
-    padding-top: 15px;
 }
 
 @media (max-width: 767px) {
@@ -1153,26 +1024,16 @@ ul {
 .page .content .projects-page .project .info .prog {
 	height: 8px;
 	width: 260px;
-	position: relative;
-	border-radius: 6px;
-}
-
-@media (max-width: 767px) {
-	.page .content .projects-page .project .info .prog {
-		margin-bottom: 15px;
-	}
 }
 
 .page .content .projects-page .project .info .prog span {
-	position: absolute;
 	left: 0;
 	top: 0;
-	height: 100%;
 	width: 0;
-	border-radius: 6px;
 	transition: var(--main-duration);
 }
 /* End projects */
+
 /* Start courses */
 .page .content .courses-page {
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1182,7 +1043,6 @@ ul {
 	.page .content .courses-page {
 		grid-template-columns: minmax(200px, 1fr);
 		margin: 0 10px;
-		gap: 10px;
 	}
 }
 
@@ -1195,10 +1055,8 @@ ul {
 }
 
 .page .content .courses-page .course .instructor {
-	position: absolute;
 	width: 64px;
 	height: 64px;
-	border-radius: 50%;
 	top: 20px;
 	left: 20px;
 	border: 2px solid #fff;
@@ -1208,17 +1066,10 @@ ul {
 	line-height: 1.6;
 }
 
-.page .content .courses-page .course .info {
-	border-top: 1px solid #eee;
-    font-size: 13px;
-}
-
 .page .content .courses-page .course .info .title {
-    position: absolute;
     left: 50%;
     top: 0;
     transform: translate(-50%, calc(-50% - .5px));
-    font-size: 13px;
 }
 /* End courses */
 
@@ -1231,22 +1082,16 @@ ul {
 	.page .content .friends-page {
 		grid-template-columns: minmax(200px, 1fr);
 		margin: 0 10px;
-		gap: 10px;
 	}
 }
 
 .page .content .friends-page .friend .contact {
-	position: absolute;
     left: 10px;
     top: 10px;
 }
 
 .page .content .friends-page .friend .contact i {
-	background-color: #eee;
-    padding: 10px;
-    border-radius: 50%;
     color: #666;
-    font-size: 13px;
     cursor: pointer;
     transition: var(--main-duration);
 }
@@ -1257,8 +1102,6 @@ ul {
 }
 
 .page .content .friends-page .friend .icons {
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
 	margin: 15px 0;
 	padding: 15px 0;
 }
@@ -1268,7 +1111,6 @@ ul {
 }
 
 .page .content .friends-page .friend .icons .vip {
-	position: absolute;
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
@@ -1352,10 +1194,6 @@ ul {
 .page .content .files-page .files-content .file:hover .icon img {
 	transform: rotate(5deg);
 }
-
-.page .content .files-page .files-content .file .info {
-	border-top: 1px solid #eee;
-}
 /* End files */
 .page .content .plans-page {
 	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -1365,7 +1203,6 @@ ul {
 	.page .content .plans-page {
 		grid-template-columns: minmax(250px, 1fr);
 		margin: 0 10px;
-		gap: 10px;
 	}
 }
 
@@ -1387,25 +1224,18 @@ ul {
 }
 
 .page .content .plans-page .plan .top .price {
-	position: relative;
     font-size: 40px;
-    width: fit-content;
     margin: auto;
 }
 
 .page .content .plans-page .plan .top .price span {
-	position: absolute;
     left: -20px;
     top: 0;
-    font-size: 25px;
 }
 
 .page .content .plans-page .plan ul li {
 	padding: 15px 0;
-    display: flex;
     align-items: center;
-    font-size: 15px;
-    border-bottom: 1px solid #eee
 }
 
 .page .content .plans-page .plan ul li i:first-child {
